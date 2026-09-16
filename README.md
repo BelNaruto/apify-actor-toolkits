@@ -15,8 +15,9 @@ No Actor here needs you to write a scraper, maintain proxies, or fight anti-bot 
 | [Sneaker & Fashion Resale Price-Tracking Toolkit](./sneaker-fashion-resale-toolkit) | Sneaker resellers, fashion arbitrage sellers, price-comparison tools | Sneaker resell tracker, Kickscrew, Zara, Vinted, Etsy, H&M |
 | [YouTube Content Research & Repurposing Toolkit](./youtube-content-research-toolkit) | Creators, podcasters, marketers, AI/LLM training pipelines | Transcript scraper, translated & multi-video transcripts, search, channel & video data |
 | [Reddit Community & Market Research Toolkit](./reddit-market-research-toolkit) | Marketers, community managers, trend & sentiment researchers | Subreddit search, posts, comments, users, trending & random subreddit discovery |
+| [AI Agent & MCP Toolkit](./ai-agent-mcp-toolkit) | AI/agent builders, Claude/Cursor power users | Connect any Actor above (YouTube transcripts, market data, Reddit, Shopify, sneaker resale) as a live MCP tool |
 
-Each toolkit README follows the same structure: **who it's for → the Actors and what they extract → how to chain them → runnable code → use cases → FAQ.**
+Each toolkit README follows the same structure: **who it's for → the Actors and what they extract → how to chain them → runnable code → use cases → FAQ.** The MCP toolkit is the exception — there's no code to write at all, just a client config.
 
 ## Quickstart: running any Actor in this repo
 
