@@ -1,6 +1,6 @@
 # Best Apify Actors for Traders & Investors: The Trading & Investing Data Toolkit
 
-A bundle of 25+ market-data Actors — economic and earnings calendars, stock fundamentals, crypto data, Yahoo Finance, and CNN Business figures — that together answer the question every trader asks every morning: **what's moving today, and is this position still worth holding?**
+A bundle of 25+ market-data Actors — economic, earnings, dividend, and holiday calendars, stock fundamentals, crypto data, Yahoo Finance, and CNN Business figures — that together answer the question every trader asks every morning: **what's moving today, and is this position still worth holding?**
 
 Every Actor below scrapes a public financial data source (Investing.com, Yahoo Finance, CNN Business) into clean, structured JSON you can pull into a spreadsheet, a Python notebook, a trading bot, or a dashboard — no browser automation or anti-bot work required on your side.
 
@@ -19,6 +19,8 @@ Every Actor below scrapes a public financial data source (Investing.com, Yahoo F
 |---|---|---|
 | Economic Calendar Data (Investing.com) | Scheduled macro releases (CPI, NFP, rate decisions) with forecast/actual/previous values, by country and impact level | [pintostudio/economic-calendar-data-investing-com](https://apify.com/pintostudio/economic-calendar-data-investing-com) |
 | Earnings Calendar Data (investing.com) | Upcoming and historical earnings dates, EPS estimates vs. actuals | [pintostudio/earnings-calendar-data-investing-com](https://apify.com/pintostudio/earnings-calendar-data-investing-com) |
+| Dividends Calendar Data (investing.com) | Upcoming and historical ex-dividend and payment dates | [pintostudio/dividends-calendar-data-investing-com](https://apify.com/pintostudio/dividends-calendar-data-investing-com) |
+| Holidays Calendar Data (investing.com) | Stock market holidays and exchange closures by country and date range | [pintostudio/holidays-calendar-data-investing-com](https://apify.com/pintostudio/holidays-calendar-data-investing-com) |
 | IPO Calendar Data (investing.com) | Upcoming IPOs with expected pricing date and exchange | [pintostudio/ipo-calendar-data-investing-com](https://apify.com/pintostudio/ipo-calendar-data-investing-com) |
 | Trader Master Calendar Data (investing.com) | Combined calendar view (economic + earnings + more) in one call | [pintostudio/trader-master-calendar-data-investing-com](https://apify.com/pintostudio/trader-master-calendar-data-investing-com) |
 
@@ -119,7 +121,9 @@ console.log({ economicEvents, earningsEvents, watchlist });
 
 **Fundamentals screener.** Loop Stock Asset Metrics + Stock Fair Value + Analyst Price Target across an index to rank stocks by how undervalued they look relative to consensus targets.
 
-**Dividend income tracker.** Use Stock Dividends across a portfolio to build a forward income calendar and flag upcoming ex-dividend dates.
+**Dividend income tracker.** Combine Stock Dividends (per-ticker history/yield) with the Dividends Calendar Data Actor (market-wide upcoming ex-dividend and payment dates) to build a forward income calendar for a whole portfolio in one feed.
+
+**Trading-day planning.** Cross-check the Holidays Calendar Data Actor against your strategy's schedule so a backtest or automated bot never assumes a trading day that's actually a market closure.
 
 **Crypto/FX-aware portfolio bot.** Combine Crypto Recent Data and Currency Converter so a multi-asset portfolio tracker reports everything in one base currency.
 
